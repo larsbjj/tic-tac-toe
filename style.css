@@ -1,13 +1,83 @@
+body {
+    background-color: #323232;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 48px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 125px;
+}
+
+/* Stile für die Tabelle */
 table {
     border-collapse: collapse;
     margin: 20px auto;
+    cursor: pointer;
 }
 
 td {
-    width: 60px;
-    height: 60px;
+    width: 125px;
+    height: 125px;
     text-align: center;
     vertical-align: middle;
     font-size: 2em;
-    border: 1px solid #000;
+    border: 5px solid white;
+}
+
+td:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+/* Rahmen innerhalb der Tabelle entfernen */
+table, td {
+    border: 0; /* Entfernt den äußeren Rahmen */
+}
+
+td {
+    border-left: 5px solid white;
+    border-top: 5px solid white;
+}
+
+td:first-child {
+    border-left: none;
+}
+
+tr:first-child td {
+    border-top: none;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.restart-button {
+    background-color: #00B0EF;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.restart-button:hover {
+    background-color: #0090cf;
 }
